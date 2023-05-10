@@ -8,6 +8,12 @@
 
 Executes the handler using the test harness.
 
+# Packaging
+
+bash/zsh: `zip -rX http_test_v1.zip http_test_v1`
+
+PowerShell:  `Compress-Archive -Path http_test_v1 -DestinationPath http_test_v1.zip`
+
 # Resources
 
 https://ruby-doc.com/

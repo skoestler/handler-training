@@ -4,7 +4,7 @@
   <description>An HTTP testing handler</description>
   <helpurl></helpurl>
   <visible>false</visible>
-  <deferrable>true</deferrable>
+  <deferrable>false</deferrable>
   <parameters>
     <parameter id="method" label="Method" required="true" menu="GET,POST,PUT,PATCH,DELETE" tooltip="GET,POST,PUT,PATCH,DELETE (Defaults to GET)">GET</parameter>
     <parameter id="path" label="Path" required="true" tooltip="Example: /kapps/:kappSlug/forms/:formSlug"></parameter>
