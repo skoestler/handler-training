@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taskDefinition id="http_test" name="HTTP Test" schema_version="1.0" version="1">
+  <author>support@kineticdata.com</author>
+  <description>An HTTP testing handler</description>
+  <helpurl></helpurl>
+  <visible>false</visible>
+  <deferrable>true</deferrable>
+  <parameters>
+    <parameter id="method" label="Method" required="true" menu="GET,POST,PUT,PATCH,DELETE" tooltip="GET,POST,PUT,PATCH,DELETE (Defaults to GET)">GET</parameter>
+    <parameter id="path" label="Path" required="true" tooltip="Example: /kapps/:kappSlug/forms/:formSlug"></parameter>
+    <parameter id="body" label="Body" required="false" tooltip="Request body if applicable (POST,PUT,PATCH)"></parameter>
+  </parameters>
+  <handler name="http_test" version="1">
+    <infos>
+      <info name="username">&lt;%= @info['username'] %&gt;</info>
+      <info name="password">&lt;%= @info['password'] %&gt;</info>
+      <info name="host">&lt;%= @info['host'] %&gt;</info>
+      <info name="port">&lt;%= @info['port'] %&gt;</info>
+    </infos>
+    <parameters>
+      <parameter name="method">&lt;%= @parameters["method"] %&gt;</parameter>
+      <parameter name="path">&lt;%= @parameters["path"] %&gt;</parameter>
+      <parameter name="body">&lt;%= @parameters["body"] %&gt;</parameter>
+    </parameters>
+  </handler>
+  <results format="xml">
+    <result name="Body"/>
+    <result name="Status Code"/>
+  </results>
+</taskDefinition>

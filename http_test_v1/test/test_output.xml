@@ -1,0 +1,4 @@
+<results>
+  <result name="Status Code" type="String">200</result>
+  <result name="Body" type="String">{}</result>
+</results>

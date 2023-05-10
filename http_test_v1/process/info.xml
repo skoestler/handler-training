@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taskInfo version="1.0">
+  <info name="username" description="Username using basic auth"></info>
+  <info name="password" description="Password using basic auth" type="encrypted"></info>
+  <info name="host" description="Host name of HTTP API service"></info>
+  <info name="port" description="Port number of HTTP API service"></info>
+</taskInfo>
