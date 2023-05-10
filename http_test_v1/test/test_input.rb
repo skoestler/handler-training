@@ -1,7 +1,7 @@
 {
   'info' => {
     'username' => "shayne.koestler@kineticdata.com",
-    'password' => ENV["KINOPS_PASS"],
+    'password' => ENV["KINOPS_TRAINING_PASS"],
     'host' => "training.kinops.io",
     'port' => 443
   },
